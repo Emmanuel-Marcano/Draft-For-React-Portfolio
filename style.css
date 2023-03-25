@@ -1,9 +1,18 @@
+:root {
+    --bg-color: hsl(49 37% 94%);
+    --typewriterSpeed: 2s;
+    --typewriterCharacters: 24;
+  }
+
+
+
 *{
     box-sizing: border-box;
 }
 
 html{
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -43,6 +52,16 @@ h1{
     animation-delay: 2s;
 }
 
+
+
+.fade-out{
+    transition: 0.5s ease;
+    opacity: 0;
+   
+
+
+}
+
 .cta{
    margin-top: 40px;
     display: flex;
@@ -64,6 +83,11 @@ h1{
 }
 
 
+
+
+
+
+
 .navigation{
     width: 100%;
     position: relative;
@@ -74,6 +98,7 @@ h1{
     text-align: center;
     cursor: pointer;
     flex-grow: 1;
+    padding: 10px;
    
     
 }
@@ -87,6 +112,21 @@ h1{
     background-color: #0082FA;
     transition: transform 0.3s ease;
 }
+
+
+
+/********************* Game *************************/
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes slide-in {
     0%{
@@ -124,6 +164,10 @@ h1{
 
 
 
+  
+  
+
+  
 
 
 

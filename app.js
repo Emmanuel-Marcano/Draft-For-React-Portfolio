@@ -2,6 +2,8 @@ let stack = document.querySelector(".animated-stack")
 let stackContent = document.querySelector(".stack-content")
 let nav = document.querySelectorAll(".nav-item")
 let bar = document.querySelector(".nav-bar")
+let startBtn = document.querySelector(".start-btn")
+let home = document.querySelector(".display")
 
 let techStack = ["HTML", "CSS", "JavaScript", "React"]
 let stackCounter = 0
@@ -43,4 +45,9 @@ nav.forEach(function(item){
 
     })
 })
+
+
+
+
+
 
