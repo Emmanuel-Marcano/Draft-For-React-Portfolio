@@ -101,7 +101,8 @@ h1{
     text-align: center;
     cursor: pointer;
     flex-grow: 1;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
    
    
     
