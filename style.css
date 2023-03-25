@@ -17,7 +17,7 @@ html{
 
 body {
     margin: 0;
-    background-color: whitesmoke;
+    background-color: #f6f9fc;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@ body {
 
 h1{
     font-size: 25px;
+    color: #333333;
 }
 
 .display{
@@ -43,6 +44,7 @@ h1{
     height: 50px;
     font-size: 20px;
     width: 65%;
+    color: #333333;
 }
 
 
@@ -69,9 +71,10 @@ h1{
 }
 
 .btn {
+    border: 2px solid #333333;
     padding: 10px 20px;
     background-color: transparent;
-    border-color: black;
+   
 }
 
 
@@ -98,17 +101,22 @@ h1{
     text-align: center;
     cursor: pointer;
     flex-grow: 1;
-    padding: 10px;
+    padding: 20px 0;
+   
    
     
+}
+
+.nav-item p {
+    color:#333333
 }
 
 .nav-bar {
     position: absolute;
     left: 0;
-    top:-10px;
+    top:0px;
     height: 3px;
-    width: 75px;
+    width: 65px;
     background-color: #0082FA;
     transition: transform 0.3s ease;
 }

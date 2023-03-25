@@ -11,26 +11,32 @@ stackContent.innerHTML = techStack[stackCounter]
 
 
 
-setInterval(function() {
-    stackCounter++
-
-        if(stackCounter === techStack.length) {
-          stackCounter = 0
-       }
-   
-    // stack.classList.remove("fade-in")
-
-    stackContent.innerHTML = techStack[stackCounter]
+    setInterval(function() {
+        stackCounter++
     
+            if(stackCounter === techStack.length) {
+              stackCounter = 0
+           }
+       
+        // stack.classList.remove("fade-in")
+    
+        stackContent.innerHTML = techStack[stackCounter]
+        
+        
+    
+        // stack.offsetWidth
+        // stack.classList.add("fade-in")
+        
+       
+    
+        
+    },2000)
     
 
-    // stack.offsetWidth
-    // stack.classList.add("fade-in")
-    
-   
 
-    
-},2000)
+
+
+
 
 
 nav.forEach(function(item){
