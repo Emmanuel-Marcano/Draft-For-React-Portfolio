@@ -16,19 +16,19 @@ setInterval(function() {
           stackCounter = 0
        }
    
-    stack.classList.remove("fade-in")
+    // stack.classList.remove("fade-in")
 
     stackContent.innerHTML = techStack[stackCounter]
     
     
 
-    stack.offsetWidth
-    stack.classList.add("fade-in")
+    // stack.offsetWidth
+    // stack.classList.add("fade-in")
     
    
 
     
-}, 2000)
+}, 3000)
 
 
 nav.forEach(function(item){
