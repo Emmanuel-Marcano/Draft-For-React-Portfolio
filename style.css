@@ -39,7 +39,7 @@ h1{
 
 
 .fade-in{
-    animation: slide-in 3s infinite;
+    animation: slide-in 1s infinite;
 }
 
 .cta{

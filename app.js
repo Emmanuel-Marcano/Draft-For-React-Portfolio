@@ -28,7 +28,7 @@ setInterval(function() {
    
 
     
-}, 3000)
+},1005)
 
 
 nav.forEach(function(item){
