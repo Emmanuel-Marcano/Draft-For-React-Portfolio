@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    align-items: center;
+    font-family: sans-serif;
+    
+   
+    
+}
+
+h1{
+    font-size: 25px;
+}
+
+.display{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.flex{
+    /* border: 1px solid black; */
+    height: 50px;
+    font-size: 20px;
+    width: 65%;
+    
+   
+}
+
+
+
+.fade-in{
+    animation: slide-in 2s;
+    
+    
+
+
+}
+
+.cta{
+   margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    
+
+
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-color: black;
+}
+
+
+
+
+
+
+
+.animated-stack{
+    position: absolute;
+    margin-left: 8px; 
+    color: #0082FA;
+    font-weight: 600;
+}
+
+
+
+
+
+.navigation{
+    width: 100%;
+    position: relative;
+   
+    display: flex;
+    
+
+}
+
+.nav-item{
+    text-align: center;
+    
+    flex-grow: 1;
+   
+    
+}
+
+.nav-bar {
+    position: absolute;
+    left: 0;
+    top:-10px;
+    height: 3px;
+    width: 75px;
+    background-color: #0082FA;
+    transition: transform 0.3s ease;
+
+
+
+}
+
+.icon{
+    
+    
+  
+
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+@keyframes slide {
+
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+        
+
+
+    }
+
+    
+
+    100%{
+        transform: translateY(-100%);
+        opacity: 0;
+
+
+    }
+
+
+
+}
+@keyframes slide-in {
+
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+       
+        
+
+
+    }
+
+    
+
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+     
+
+
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    .flex {
+        width: 700px;
+        font-size: 22px;
+    }
+    
+  }
+
+
+
+
+
+
+
