@@ -1,6 +1,6 @@
 :root {
-    --bg-color: hsl(49 37% 94%);
-    --typewriterSpeed: 2s;
+    --bg-color: #f6f9fc;
+    --typewriterSpeed: 1s;
     --typewriterCharacters: 24;
   }
 
@@ -85,7 +85,59 @@ h1{
     font-weight: 600;
 }
 
+.stack-content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
+}
+.stack-content::after{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.stack-content::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+     infinite alternate;
+  }
+  
+.stack-content::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        infinite alternate,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+ 
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  
+  
+  
+  
+  
 
 
 
