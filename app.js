@@ -37,14 +37,38 @@ stackContent.innerHTML = techStack[stackCounter]
 
 
 
-
+    let previousItem
 
 nav.forEach(function(item){
 
     item.addEventListener("click", function(){
         console.log("5")
+       
+
+        if(previousItem){
+             previousItem.style.color = "#555555"
+
+        }
+
+ 
+         previousItem = item.firstElementChild
+      
+        item.firstElementChild.style.color = "black";
+        previousItem = item.firstElementChild
+
+
+
+      
+
+        
+
+
+
+       
+        
 
         bar.style.transform = `translateX(${item.getBoundingClientRect().left}px)`
+       
 
 
 

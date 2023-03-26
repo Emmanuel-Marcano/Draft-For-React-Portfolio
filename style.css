@@ -24,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 h1{
@@ -145,8 +146,9 @@ h1{
 
 .navigation{
     width: 100%;
-    position: relative;
+    position: fixed;
     display: flex;
+    bottom: 0;
 }
 
 .nav-item{
@@ -168,11 +170,23 @@ h1{
     position: absolute;
     left: 0;
     top:0px;
-    height: 3px;
+    height: 4px;
     width: 80px;
     background-color: #0082FA;
     transition: transform 0.3s ease;
 }
+
+.icon{
+
+    color:#555555;
+
+
+
+}
+
+/* .icon:active{
+    color: black;
+} */
 
 
 
