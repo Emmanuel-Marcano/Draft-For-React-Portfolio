@@ -99,33 +99,14 @@ nav.forEach(function(item){
 
         }
 
-
-
-
-
-
+        
+       console.log(`${item.clientWidth}px`)
+        
+        bar.style.width = `${item.clientWidth}px`
         previousItem = item.firstElementChild
         item.firstElementChild.style.color = "black";
-        
         previousItem = item.firstElementChild
-
-
-
-      
-
-        
-
-
-
-       
-        
-
         bar.style.transform = `translateX(${item.getBoundingClientRect().left}px)`
-       
-
-
-
-
     })
 })
 
