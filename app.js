@@ -37,23 +37,76 @@ stackContent.innerHTML = techStack[stackCounter]
 
 
 
-    let previousItem
-
+let previousItem
 nav.forEach(function(item){
 
     item.addEventListener("click", function(){
         console.log("5")
        
-
         if(previousItem){
              previousItem.style.color = "#555555"
+             if(previousItem.classList.contains("fa-house-chimney")) {
+          
+                previousItem.classList.remove("fa-house-chimney")
+              }
+             else if(previousItem.classList.contains("fa-pen-to-square")) {
+          
+                previousItem.classList.remove("fa-pen-to-square")
+              }
+             else if(previousItem.classList.contains("fa-folder-open")) {
+          
+                previousItem.classList.remove("fa-folder-open")
+              }
+             else if(previousItem.classList.contains("fa-envelope-circle-check")) {
+          
+                previousItem.classList.remove("fa-envelope-circle-check")
+              }
+             else if(previousItem.classList.contains("fa-user-tie")) {
+          
+                previousItem.classList.remove("fa-user-tie")
+              }
+
+            
 
         }
 
- 
-         previousItem = item.firstElementChild
-      
+
+        if(item.firstElementChild.classList.contains("fa-house")) {
+          
+            item.firstElementChild.classList.add("fa-house-chimney")
+        }
+
+        else if(item.firstElementChild.classList.contains("fa-pen")){
+            item.firstElementChild.classList.add("fa-pen-to-square")
+        }
+
+        else if(item.firstElementChild.classList.contains("fa-folder")){
+        
+            item.firstElementChild.classList.add("fa-folder-open")
+
+
+        }
+        else if(item.firstElementChild.classList.contains("fa-envelope")){
+        
+            item.firstElementChild.classList.add("fa-envelope-circle-check")
+
+
+        }
+        else if(item.firstElementChild.classList.contains("fa-user")){
+        
+            item.firstElementChild.classList.add("fa-user-tie")
+
+
+        }
+
+
+
+
+
+
+        previousItem = item.firstElementChild
         item.firstElementChild.style.color = "black";
+        
         previousItem = item.firstElementChild
 
 
